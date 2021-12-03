@@ -3,6 +3,7 @@ $(document).on('ready', function () {
     var slideWidth = $('.slide-block').width();
     var marginleft =  slideWidth / 2 + (slideWidth *(slideCount-1)/2);
     $('#slide-wrapper').prepend($('.slide-block:nth-last-of-type(-n+2)').clone()).css({ marginLeft: - marginleft });
+    $('#slide-wrapper').append($('.slide-block:nth-child(3)').clone());
     //   console.log($('#slider').width(), $('#slide-wrapper').width(),$('.slide-block').outerWidth(true));
 
       $('.control_prev').click(function () {console.log('hi');
